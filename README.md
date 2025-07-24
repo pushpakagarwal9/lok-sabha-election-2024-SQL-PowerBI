@@ -19,4 +19,53 @@ The key focus areas include:
 
 ## 🛠️ Tools Used
 
-- **SQL Server** — For querying, aggregation, and KPI extraction  
+- **SQL Server** — For querying, aggregation, and KPI extraction
+-  👉 [SQL Code](./Election_Result_2024_Analysis.sql)
+- **Power BI** — For data visualization and dashboarding  
+  👉 [Dashboard Screenshot](./election_Result_2024_Analysis.png)
+- **Excel** — Raw dataset in spreadsheet format  
+  👉 [Dataset File](./Dataset/election_result_2024.xlsx)
+
+---
+
+## 📂 Dataset Description
+
+The dataset contains row-level data of each candidate contesting in every constituency for the 2024 Indian general elections. Key columns include:
+
+| Column Name         | Description                                               |
+|---------------------|-----------------------------------------------------------|
+| `election_year`     | Year of the election (2024)                               |
+| `state_name`        | Name of the state                                         |
+| `constituency_name` | Name of the constituency                                  |
+| `constituency_type` | General or Reserved (e.g., ST, SC)                        |
+| `party_name`        | Name of the political party                               |
+| `candidate_name`    | Name of the contesting candidate                          |
+| `EVM_votes`         | Votes received through Electronic Voting Machines         |
+| `postal_votes`      | Votes received via postal ballots                         |
+| `total_votes`       | Combined total votes (EVM + postal)                       |
+| `rank`              | Rank based on total votes in the constituency             |
+| `units`             | Indicates absolute vote counts                            |
+
+---
+
+## ❓ Questions Answered
+
+1. Which party secured the highest number of seats?
+2. What is the distribution of votes by party and state?
+3. Which candidates had the highest winning margins?
+4. How many total votes were cast through EVM and postal ballots?
+5. Which constituencies had the closest races?
+6. What percentage of seats were won by top political parties?
+7. How many independent candidates contested, and how did they perform?
+
+---
+
+## 🔍 Key Insights
+
+- **Bharatiya Janata Party (BJP)** secured the majority with **239 seats**.
+- **Indian National Congress (INC)** followed with **99 seats**.
+- **645 million total votes** were recorded, with **99.42% through EVMs**.
+- Close contests were observed in several constituencies, with margins under 1,000 votes.
+- Multiple constituencies had **10+ candidates**, indicating strong electoral competition.
+- NOTA (None of the Above) received **6 million+ votes**, signifying voter awareness.
+  
